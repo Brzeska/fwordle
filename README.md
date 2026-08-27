@@ -28,4 +28,4 @@ actually solving a sample puzzle, since ideally even our machines
 should be spared from having to play wordle.
 
 # how to run
-Go into the directory and type `zsh fwordle.sh`
+Go into the directory and type `bash fwordle.sh`. At least, that works on macOS and Linux. On windows you're fucked.
