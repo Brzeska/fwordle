@@ -1,3 +1,7 @@
+# note
+
+This project is mostly being created as a vehicle for me to learn git/github, as well as a little machine learning
+
 # fwordle
 
 Automatic wordle emoji card generator. Currently, solver.py 
