@@ -6,7 +6,9 @@ It generates these things:
 Wordle 1,894 3/6*
 
 🟨🟩⬛⬛🟩
+
 ⬛🟩🟨🟨🟩
+
 🟩🟩🟩🟩🟩
 
 without you having to play wordle.
