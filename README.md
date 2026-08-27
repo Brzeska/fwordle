@@ -25,7 +25,7 @@ The goal is to use the current system to generate thousands (or
 more) of sample cards, then to use ML techniques (details to be
 filled in later) to teach the computer to generate cards without
 actually solving a sample puzzle, since ideally even our machines 
-should be spared from having to play wordle.
+should be spared from playing wordle.
 
 # how to run
 Go into the directory and type `bash fwordle.sh`. At least, that works on macOS and Linux. On windows you're fucked.
