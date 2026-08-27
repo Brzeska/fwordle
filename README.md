@@ -3,6 +3,7 @@
 This project is mostly being created as a vehicle for me to learn git/github, as well as a little machine learning
 
 It generates these things:
+
 Wordle 1,894 3/6*
 
 🟨🟩⬛⬛🟩
