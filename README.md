@@ -41,3 +41,6 @@ should be spared from playing wordle.
 
 # how to run
 Go into the directory and type `bash fwordle.sh`. At least, that works on macOS and Linux. On windows you're fucked.
+
+# Thanks
+Thanks to GitHub user dracos for the list of valid wordle words.
