@@ -2,3 +2,5 @@ out.txt
 raw.txt
 .DS_store
 .wrapper.py.swp
+.fwordle.sh.swp
+data_copy.txt
