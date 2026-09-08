@@ -22,17 +22,17 @@ def giveFeedback(guess,answer):
     
     for i in range(len(guess)): #first pass: assign hits (g) and misses (x, some will get updated to y in second pass)
         if guess_list[i] == answer_list[i]:
-            returnValue += 'g'
+            returnValue += '2'
             answer_dict[guess[i]] = answer_dict.get(guess[i],0) - 1
         else:
-            returnValue += 'x'
+            returnValue += '0'
     
     return_list = list(returnValue)
 
     for i in range(len(guess)):#second pass: assign y's
-        if returnValue[i] == 'x':
+        if returnValue[i] == '0':
             if answer_dict.get(guess_list[i],0):
-                return_list[i] = 'y'
+                return_list[i] = '1'
                 answer_dict[guess[i]] = answer_dict.get(guess[i],0) - 1
 
     returnValue = "".join(return_list)
@@ -54,13 +54,13 @@ def isConsistent(guess, feedback, new_guess):
 
     new_guess_set = set(list(new_guess))
     for i in range(len(guess)):
-        if feedback[i] == 'g': #meaning guess and newGuess should match here
+        if feedback[i] == '2': #meaning guess and newGuess should match here
             if guess[i] != new_guess[i]:
                 return False
-        elif feedback[i] == 'x':
+        elif feedback[i] == '0':
             if guess[i] == new_guess[i]:
                 return False
-        if feedback[i] == 'y':
+        if feedback[i] == '1':
             if new_guess_set.isdisjoint({guess[i]}):
                 return False
             if guess[i] == new_guess[i]:
@@ -87,7 +87,7 @@ answer = random.choice(list(wordSet))
 guess = random.choice(list(wordSet))
 #print(f"answer: {answer}")
 #print(f"guess: {guess}")
-info = 'zzzzz' #placeholder, z means nothing
+info = '.....' #placeholder, z means nothing
 
 for i in range(6):
     info = giveFeedback(guess,answer)
@@ -95,6 +95,6 @@ for i in range(6):
     guess = random.choice(list(wordSet))
     #print(f"guess: {guess} info: {giveFeedback(guess,answer)}")
     print(giveFeedback(guess,answer))
-    if giveFeedback(guess,answer) == 'ggggg':
+    if giveFeedback(guess,answer) == '22222':
         break
     

@@ -6,7 +6,7 @@ with open('raw.txt', 'r') as f:
 t=int(time.time()/86400-7/24)-18797
 
 l = len(lines)
-if (l==6) and (lines[5]!='ggggg'):
+if (l==6) and (lines[5]!='22222'):
     l = 'X'
 
 out = f"Wordle {t:,} {l}/6*\n\n"
@@ -14,11 +14,11 @@ out = f"Wordle {t:,} {l}/6*\n\n"
 for i in lines:
     outStr = ''
     for j in i:
-        if j == 'x':
+        if j == '0':
             outStr += '⬛'
-        elif j == 'y':
+        elif j == '1':
             outStr += '🟨'
-        elif j == 'g':
+        elif j == '2':
             outStr += '🟩'
     outStr += '\n'
     out += outStr
