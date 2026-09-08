@@ -96,5 +96,4 @@ torch.save({
     'C': C,
     'W1': W1, 'b1': b1,
     'W2': W2, 'b2': b2,
-    # etc.
 }, 'fwordle_net.pt')
