@@ -41,6 +41,7 @@ should be spared from playing wordle.
 
 # how to run
 Go into the directory and type `bash fwordle.sh` to run the classical solver.
+
 Type `bash fwordle_net.sh` to have the multilayer-perceptron generate a completely
 original card without solving a real puzzle.
 
