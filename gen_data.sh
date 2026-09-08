@@ -1,8 +1,8 @@
 #!/bin/sh
 
-echo "....." > data.txt
+python3 solver.py > data.txt
 
-for (( i=0; i < $1; ++i ))
+for (( i=1; i < $1; ++i ))
 do
     python3 solver.py >> data.txt
     echo "....." >> data.txt
