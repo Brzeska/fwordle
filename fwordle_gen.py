@@ -11,8 +11,6 @@ W2 = model['W2']
 b2 = model['b2']
 C = model['C']
 
-#print(C)
-
 ctoi = {np.base_repr(i,3).zfill(5):i+1 for i in range(243)}
 ctoi['.....']=0
 itoc = {s:i for i,s in ctoi.items()}
