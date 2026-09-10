@@ -18,7 +18,7 @@ ctoi['.....']=0
 itoc = {s:i for i,s in ctoi.items()}
 
 block_size = 6
-embedding_dimension = 10
+embedding_dimension = 6
 
 context = [0]*block_size
 
